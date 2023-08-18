@@ -22,7 +22,7 @@ export const Common: Story = {
         <p className="title">Global</p>
 
         <div className="container-row">
-          <div className="container-col">
+          <div className="container-col margin-16px">
             <p className="subtitle">Opaque</p>
 
             <div className="story-item">
@@ -78,7 +78,7 @@ export const Common: Story = {
             </div>
           </div>
 
-          <div className="container-col">
+          <div className="container-col margin-16px">
             <p className="subtitle">Transparent</p>
 
             <div className="story-item">
@@ -128,6 +128,63 @@ export const Common: Story = {
               <div className="transparent-gray1"></div>
             </div>
             <div className="story-item blank"></div>
+          </div>
+
+          <div className="container-col margin-16px">
+            <p className="subtitle">Transparent/Invert</p>
+
+            <div className="story-item">
+              <div className="transparent-invert-gray6"></div>
+            </div>
+            <div className="story-item">
+              <div className="transparent-invert-gray5"></div>
+            </div>
+            <div className="story-item">
+              <div className="transparent-invert-gray4"></div>
+            </div>
+            <div className="story-item">
+              <div className="transparent-invert-gray2"></div>
+            </div>
+          </div>
+
+          <div className="container-col margin-16px">
+            <p className="subtitle">Accent/Opaque</p>
+
+            <div className="story-item">
+              <div className="accent-opaque5"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-opaque4"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-opaque3"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-opaque2"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-opaque1"></div>
+            </div>
+          </div>
+
+          <div className="container-col margin-16px">
+            <p className="subtitle">Accent/Transparent</p>
+
+            <div className="story-item">
+              <div className="accent-transparent5"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-transparent4"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-transparent3"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-transparent2"></div>
+            </div>
+            <div className="story-item">
+              <div className="accent-transparent1"></div>
+            </div>
           </div>
         </div>
       </StoryWrapper>
