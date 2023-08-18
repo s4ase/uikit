@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
 import StoryWrapper from "../components/helpers/color-story-wrapper";
+import { T } from "../components/typography";
 // import { within, userEvent } from "@storybook/testing-library";
 
 const meta = {
@@ -19,11 +20,11 @@ export const Common: Story = {
   render: () => {
     return (
       <StoryWrapper className="container-col">
-        <p className="title">Global</p>
+        <T as="h2">Global</T>
 
         <div className="container-row">
           <div className="container-col margin-16px">
-            <p className="subtitle">Opaque</p>
+            <T as="h3">Opaque</T>
 
             <div className="story-item">
               <div className="opaque-blue"></div>
@@ -79,7 +80,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Transparent</p>
+            <T as="h3">Transparent</T>
 
             <div className="story-item">
               <div className="transparent-blue"></div>
@@ -131,7 +132,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Transparent/Invert</p>
+            <T as="h3">Transparent/Invert</T>
 
             <div className="story-item">
               <div className="transparent-invert-gray6"></div>
@@ -148,7 +149,8 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Accent/Opaque</p>
+            <T as="h3">Accent/Opaque</T>
+            <p className="subtitle"></p>
 
             <div className="story-item">
               <div className="accent-opaque5"></div>
@@ -168,7 +170,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Accent/Transparent</p>
+            <T as="h3">Accent/Transparent</T>
 
             <div className="story-item">
               <div className="accent-transparent5"></div>
