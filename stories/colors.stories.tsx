@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
 import StoryWrapper from "../components/helpers/color-story-wrapper";
-import { T } from "../components/typography";
 // import { within, userEvent } from "@storybook/testing-library";
 
 const meta = {
@@ -20,11 +19,11 @@ export const Common: Story = {
   render: () => {
     return (
       <StoryWrapper className="container-col">
-        <T as="h2">Global</T>
+        <p>Global</p>
 
         <div className="container-row">
           <div className="container-col margin-16px">
-            <T as="h3">Opaque</T>
+            <p>Opaque</p>
 
             <div className="story-item">
               <div className="opaque-blue"></div>
@@ -80,7 +79,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <T as="h3">Transparent</T>
+            <p>Transparent</p>
 
             <div className="story-item">
               <div className="transparent-blue"></div>
@@ -132,7 +131,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <T as="h3">Transparent/Invert</T>
+            <p>Transparent/Invert</p>
 
             <div className="story-item">
               <div className="transparent-invert-gray6"></div>
@@ -149,7 +148,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <T as="h3">Accent/Opaque</T>
+            <p>Accent/Opaque</p>
             <p className="subtitle"></p>
 
             <div className="story-item">
@@ -170,7 +169,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <T as="h3">Accent/Transparent</T>
+            <p>Accent/Transparent</p>
 
             <div className="story-item">
               <div className="accent-transparent5"></div>
