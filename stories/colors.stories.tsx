@@ -19,11 +19,11 @@ export const Common: Story = {
   render: () => {
     return (
       <StoryWrapper className="container-col">
-        <p className="title">Global</p>
+        <p>Global</p>
 
         <div className="container-row">
           <div className="container-col margin-16px">
-            <p className="subtitle">Opaque</p>
+            <p>Opaque</p>
 
             <div className="story-item">
               <div className="opaque-blue"></div>
@@ -79,7 +79,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Transparent</p>
+            <p>Transparent</p>
 
             <div className="story-item">
               <div className="transparent-blue"></div>
@@ -131,7 +131,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Transparent/Invert</p>
+            <p>Transparent/Invert</p>
 
             <div className="story-item">
               <div className="transparent-invert-gray6"></div>
@@ -148,7 +148,8 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Accent/Opaque</p>
+            <p>Accent/Opaque</p>
+            <p className="subtitle"></p>
 
             <div className="story-item">
               <div className="accent-opaque5"></div>
@@ -168,7 +169,7 @@ export const Common: Story = {
           </div>
 
           <div className="container-col margin-16px">
-            <p className="subtitle">Accent/Transparent</p>
+            <p>Accent/Transparent</p>
 
             <div className="story-item">
               <div className="accent-transparent5"></div>
