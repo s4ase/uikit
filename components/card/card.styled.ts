@@ -1,12 +1,5 @@
 import { styled } from "styled-components";
 
-export const CardStoryWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 80px 60px;
-  padding: 40px 60px;
-`;
-
 export const CardIcon = styled.div`
   background: var(--fill-secondary, rgba(204, 187, 184, 0.16));
   border-radius: 8px;

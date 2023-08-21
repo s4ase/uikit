@@ -1,4 +1,6 @@
 import {
+  CardDescription,
+  CardHeading,
   CardIcon,
   CardRow,
   CardRowDescription,
@@ -31,6 +33,9 @@ const Card = ({
 }: CardProps) => {
   return (
     <CardStyled className={className || ""}>
+      {heading && <CardHeading>{heading}</CardHeading>}
+      {mainDescription && <CardDescription>{mainDescription}</CardDescription>}
+
       <CardRow>
         <CardRowLeft>
           {iconSrc && (
