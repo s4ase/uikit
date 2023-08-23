@@ -23,7 +23,7 @@ const TextField = forwardRef<HTMLInputElement, Props>((props, ref) => {
         tabIndex={props.tabIndex}
         className="input"
         placeholder={props.placeholder}
-        value={props.value}
+        value={props.value ?? ""}
         onChange={props.onChange}
       />
 

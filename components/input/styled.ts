@@ -26,7 +26,7 @@ export const InputBox = styled.div`
     border: none;
     outline: none;
     width: 100%;
-    height: 20px;
+    height: 32px;
     background: transparent;
     caret-color: var(--text-primary);
     color: transparent;
