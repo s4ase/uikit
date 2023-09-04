@@ -4,7 +4,7 @@ import { createStore, hasFeature } from "../util";
 
 const { emit, subscribe } = createStore();
 
-const DEFAULT_CONFIG = "auto";
+const DEFAULT_CONFIG = "system";
 const CONFIG_KEY = "theme";
 export type ThemeVariant = "dark" | "light";
 export type ThemeConfig = ThemeVariant | typeof DEFAULT_CONFIG;
