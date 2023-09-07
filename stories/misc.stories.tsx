@@ -3,10 +3,13 @@ import cn from "classnames";
 import React, { ChangeEvent, useMemo, useReducer } from "react";
 
 import styled from "styled-components";
+import { ButtonWrapper as Button } from "../components/button/styled";
 import SuperSlider_ from "../components/input/super-slider";
 import * as Class from "../constants/classnames";
 import T from "../components/typography";
+import Icon from "../icons/lamp";
 import { useThemeConfigStore, useSetTheme, setValue } from "../stores/theme";
+import { getEntries, isPrefixed } from "../util/type";
 
 const Container = styled.div`
   position: relative;
@@ -44,18 +47,6 @@ type SetAction<S extends {}, K extends keyof S = keyof S> = {
 
 type Action = SetAction<State> | { type: "setState"; payload: Partial<State> };
 
-function isPrefixed<P extends string>(
-  prefix: P,
-  str?: string,
-): str is `${P}${string}` {
-  return Boolean(str?.startsWith(prefix));
-}
-
-export const getEntries = <T extends {}, K extends keyof T>(
-  obj?: T,
-): Array<[K, T[K]]> => {
-  return Object.entries(obj ?? {}) as unknown as Array<[K, T[K]]>;
-};
 
 const reducer = (state: State, action: Action) => {
   const { type, payload } = action;
@@ -160,19 +151,24 @@ export const Common: Story = {
 
         <div className={cn("container-row", "margin-16px")}>
           <div className="container-col" style={{ width: "50%" }}>
-            <SuperSlider title="Leverage" />
+            <Button className={Class.L}>
+              <Icon secondary style={{ width: 24, height: 24 }} />
+              &nbsp;Hi!
+            </Button>
           </div>
 
           <div className="margin-16px" />
 
           <div className={cn("container-col")} style={{ width: "50%" }}>
-            <SuperSlider title="Leverage" value={20} />
+            <Button className={cn(Class.L, Class.Pending)}>
+              Something else
+            </Button>
           </div>
         </div>
 
         <div className={cn("container-row", "margin-16px")}>
           <div className="container-col" style={{ width: "50%" }}>
-            <SuperSlider title="Leverage" value={10} restrictLessThan={10} />
+            <SuperSlider title="Leverage" />
           </div>
 
           <div className="margin-16px" />
@@ -184,7 +180,19 @@ export const Common: Story = {
 
         <div className={cn("container-row", "margin-16px")}>
           <div className="container-col" style={{ width: "50%" }}>
-            <SuperSlider title="Leverage" value={15} restrictLessThan={10} />
+            <SuperSlider title="Leverage" value={10} restrictLessThan={10} />
+          </div>
+
+          <div className="margin-16px" />
+
+          <div className={cn("container-col")} style={{ width: "50%" }}>
+            <SuperSlider title="Leverage" value={10} />
+          </div>
+        </div>
+
+        <div className={cn("container-row", "margin-16px")}>
+          <div className="container-col" style={{ width: "50%" }}>
+            <SuperSlider title="Leverage" value={15} restrictLessThan={12} />
           </div>
 
           <div className="margin-16px" />
@@ -196,7 +204,7 @@ export const Common: Story = {
 
         <div className={cn("container-row", "margin-16px")}>
           <div className="container-col" style={{ width: "50%" }}>
-            <SuperSlider title="Leverage" value={18} restrictLessThan={17} />
+            <SuperSlider title="Leverage" value={18} restrictLessThan={15} />
           </div>
 
           <div className="margin-16px" />
@@ -208,7 +216,7 @@ export const Common: Story = {
 
         <div className={cn("container-row", "margin-16px")}>
           <div className="container-col" style={{ width: "50%" }}>
-            <SuperSlider title="Leverage" value={20} restrictLessThan={15} />
+            <SuperSlider title="Leverage" value={20} restrictLessThan={17} />
           </div>
 
           <div className="margin-16px" />

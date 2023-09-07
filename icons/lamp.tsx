@@ -1,13 +1,11 @@
 import type { IconProps } from "./types";
+import { composeProps } from "./util";
 
 // TODO refactor to .svg
-function LampIcon(_props: IconProps) {
-  const { noInvert, style, ...props } = _props;
-
+function LampIcon(props: IconProps) {
   return (
     <svg
-      {...props}
-      style={{ filter: noInvert ? "invert(0)" : "invert(var(--svg-invert))", ...style }}
+      {...composeProps(props)}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
