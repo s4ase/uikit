@@ -100,6 +100,7 @@ export const THEME_VARS_GENERATED = {
   "--border-hover": "--border-hover",
   "--border-focus": "--border-focus",
   "--svg-invert": "--svg-invert",
+  "--svg-invert-secondary": "--svg-invert-secondary",
   "--path-to-logo": "--path-to-logo",
   "--logo": "--logo",
   "--w3m-accent-color": "--w3m-accent-color",
