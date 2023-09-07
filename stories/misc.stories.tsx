@@ -9,6 +9,7 @@ import * as Class from "../constants/classnames";
 import T from "../components/typography";
 import Icon from "../icons/lamp";
 import { useThemeConfigStore, useSetTheme, setValue } from "../stores/theme";
+import { getEntries, isPrefixed } from "../util/type";
 
 const Container = styled.div`
   position: relative;
@@ -46,18 +47,6 @@ type SetAction<S extends {}, K extends keyof S = keyof S> = {
 
 type Action = SetAction<State> | { type: "setState"; payload: Partial<State> };
 
-function isPrefixed<P extends string>(
-  prefix: P,
-  str?: string,
-): str is `${P}${string}` {
-  return Boolean(str?.startsWith(prefix));
-}
-
-export const getEntries = <T extends {}, K extends keyof T>(
-  obj?: T,
-): Array<[K, T[K]]> => {
-  return Object.entries(obj ?? {}) as unknown as Array<[K, T[K]]>;
-};
 
 const reducer = (state: State, action: Action) => {
   const { type, payload } = action;
