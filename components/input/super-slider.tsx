@@ -104,17 +104,13 @@ function SuperSlider({
           <div
             className={LocalClass.RestrictUnderlay}
             style={{
-              width: `calc(${percent(restrictOffset!)} - ${
-                (HANDLE_WIDTH + 4) / 4
-              }px)`,
+              width: `calc(${percent(restrictOffset!)} - ${0}px)`,
             }}
           />
           <div
             className={LocalClass.Restrict}
             style={{
-              width: `calc(${percent(restrictOffset!)} - ${
-                (HANDLE_WIDTH + 4) / 4
-              }px)`,
+              width: `calc(${percent(restrictOffset!)} - ${0}px)`,
             }}
           />
         </>
