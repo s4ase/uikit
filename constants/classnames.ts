@@ -19,9 +19,16 @@ export const Right = "right";
 export const S = "sm";
 export const M = "md";
 export const L = "lg";
+export const XL = "xl";
 
 // variants
 export const Action = "action";
 export const Body = "body";
 export const Caption = "caption";
 export const Secondary = "secondary";
+export const Rectangle = "rectangle";
+export const DarkBG = "darkbg";
+export const LightBg = "lightbg";
+export const Status = "status";
+export const Accent = "accent";
+export const Image = "image";
