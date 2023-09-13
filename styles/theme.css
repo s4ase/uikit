@@ -122,6 +122,14 @@
   --w3m-accent-color: #0000007e !important;
   --spacing-space-8: 8px;
   --spacing-space-16: 16px;
+  --rounding-radius-xs: 8px;
+  --rounding-radius-s: 16px;
+  --rounding-radius-m: 24px;
+  --rounding-radius-xl: 24px;
+  --rounding-radius-xxl: 32px;
+  --rounding-radius-xxxl: 48px;
+  --spacing-space-24: 24px;
+  --border-image-edge: rgba(204, 187, 184, 0.16);
 }
 
 [data-theme="dark"] {
