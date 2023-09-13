@@ -4,7 +4,7 @@ import { composeProps } from "./util";
 // TODO refactor to .svg
 function Pattern(props: IconProps) {
   return (
-<svg  {...composeProps(props)} width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
+<svg  {...composeProps(props)} viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
 <path d="M0 16C0 7.16345 7.16344 0 16 0H80C88.8366 0 96 7.16344 96 16V80C96 88.8366 88.8366 96 80 96H16C7.16345 96 0 88.8366 0 80V16Z" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

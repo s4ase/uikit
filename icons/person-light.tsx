@@ -4,7 +4,7 @@ import { composeProps } from "./util";
 // TODO refactor to .svg
 function LightPersonIcon(props: IconProps) {
   return (
-<svg   {...composeProps(props)} width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg   {...composeProps(props)} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1446_34099)">
 <mask id="mask0_1446_34099" style={{maskType:"luminance"}} maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
 <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M34.2265 22.2816C32.1146 25.7125 28.3244 28 24 28C19.6755 28 15.8854 25.7125 13.7734 22.2816C16.8758 20.8182 20.3423 20 24 20C27.6576 20 31.1242 20.8182 34.2265 22.2816Z" fill="white" style={{fill:"white", fillOpacity:1}}/>
