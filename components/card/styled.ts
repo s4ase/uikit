@@ -52,7 +52,7 @@ export const CardItemTitle = styled.div`
 
 /** @deprecated no more assign; move out to Cell component; https://www.figma.com/file/qEhBc8Ub9LpdiPhOKaQiZV/%E2%9D%96-Varginly?type=design&node-id=73-5005&mode=design&t=0u0sEMhesqcGmc6s-4 */
 export const CardItemDescription = styled.div`
-  color: ${cssVar("--text-secondary", "rgba(66, 61, 60, 0.64)")};
+  color: ${cssVar("--text-secondary", "rgba(46, 35, 33, 0.64)")};
   font-family: "PlusJakartaSans", sans-serif;
   font-size: 12px;
   font-variation-settings: "wght" 500;
