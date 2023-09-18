@@ -4,6 +4,7 @@
   "description": "",
   "private": false,
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "yarn watch & yarn storybook & wait",
     "vars": "cat styles/theme.css | ts-node --esm scripts/from-css.ts",
