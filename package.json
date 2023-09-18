@@ -9,8 +9,8 @@
     "dev": "yarn watch & yarn storybook & wait",
     "vars": "cat styles/theme.css | ts-node --esm scripts/from-css.ts",
     "watch": "tsc -w",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "yarn storybook dev -p 6006",
+    "build-storybook": "yarn storybook build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.1.1",
